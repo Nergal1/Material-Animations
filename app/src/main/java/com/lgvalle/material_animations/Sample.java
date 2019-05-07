@@ -20,7 +20,7 @@ public class Sample implements Serializable {
         this.name = name;
     }
 
-    @BindingAdapter("bind:colorTint")
+    @BindingAdapter("colorTint")
     public static void setColorTint(ImageView view, @ColorRes int color) {
         DrawableCompat.setTint(view.getDrawable(), color);
         //view.setColorFilter(color, PorterDuff.Mode.SRC_IN);
